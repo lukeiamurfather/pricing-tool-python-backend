@@ -1,0 +1,86 @@
+{
+  "id": "dataset_1753444138420",
+  "fileId": "1753443562857-pricing_output_comp_retail.csv",
+  "fieldAssignments": {
+    "Claim Count": "ultimate_claims_count",
+    "Ultimate Claims": "ultimate_claims",
+    "Exposure": "annual_exposure",
+    "Year": "year"
+  },
+  "fieldMappings": {
+    "count": "ultimate_claims_count",
+    "guc": "ultimate_claims",
+    "exposure": "annual_exposure",
+    "year": "year"
+  },
+  "selectedFields": [
+    "year",
+    "gsi_band",
+    "agency_indicator",
+    "usage",
+    "new_renewal",
+    "gender",
+    "country_origin",
+    "clean_make",
+    "cover",
+    "driver_age_band",
+    "leasing",
+    "vehicle_type",
+    "veh_age",
+    "excess_band",
+    "source_of_business",
+    "claim_type",
+    "annual_exposure",
+    "gross_claim",
+    "claim_count",
+    "ultimate_claims_count",
+    "ultimate_claims",
+    "ultimate_inflated_claims",
+    "guc",
+    "ncd",
+    "ncd_discount",
+    "agg_indicator",
+    "vehicle_color",
+    "business_activity",
+    "offset_exposure",
+    "offset_total"
+  ],
+  "filters": {
+    "exposuresGreaterThan": true,
+    "exposureLessThanOrEqualToOne": true,
+    "ultimateClaimsNonNegative": true,
+    "claimCountNonNegative": true
+  },
+  "minExposureValue": 0,
+  "selectedYears": {
+    "2021": true,
+    "2022": true,
+    "2023": true
+  },
+  "trainPercentage": 81,
+  "filePath": "C:\\Users\\njain\\documents\\pricing-tool-exe-v2\\backend\\uploads\\1753443562857-pricing_output_comp_retail.csv",
+  "fileType": ".csv",
+  "derivedFields": {},
+  "trainSize": 16151,
+  "testSize": 5804,
+  "trainStats": {
+    "guc": {
+      "mean": "1385.16",
+      "variance": "56066665.65"
+    },
+    "count": {
+      "mean": "0.12",
+      "variance": "0.15"
+    }
+  },
+  "testStats": {
+    "guc": {
+      "mean": "1360.25",
+      "variance": "49870683.50"
+    },
+    "count": {
+      "mean": "0.11",
+      "variance": "0.15"
+    }
+  }
+}
